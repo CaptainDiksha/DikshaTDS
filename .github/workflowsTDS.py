@@ -1,0 +1,35 @@
+!pip install ipykernel
+
+import streamlit as st
+st.write("""
+# Credit Card Approval Prediction App
+
+This app predicts the credit card approval probablity
+""")
+#Get Input
+
+st.header('User Input Parameters')
+def find_largest(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return num2
+    else:
+        return num3
+
+def main():
+    st.title("Find the Largest Number")
+
+    # Input fields for three numbers
+    number1 = st.number_input("Enter the first number:", value=0)
+    number2 = st.number_input("Enter the second number:", value=0)
+    number3 = st.number_input("Enter the third number:", value=0)
+
+    # Find the largest number
+    largest_number = find_largest(number1, number2, number3)
+
+    # Display the result
+    st.write(f"The largest number is: {largest_number}")
+
+if __name__ == "__main__":
+    main()
