@@ -2,9 +2,7 @@
 
 import streamlit as st
 st.write("""
-# Credit Card Approval Prediction App
-
-This app predicts the credit card approval probablity
+# This app tells the largest number among the given 3 numbers
 """)
 #Get Input
 
