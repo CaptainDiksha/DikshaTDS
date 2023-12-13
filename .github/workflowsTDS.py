@@ -1,4 +1,4 @@
-!pip install ipykernel
+
 
 import streamlit as st
 st.write("""
